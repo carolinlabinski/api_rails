@@ -38,6 +38,7 @@ group :development do
 end
 
 gem 'devise-jwt', '~> 0.6.0'
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
