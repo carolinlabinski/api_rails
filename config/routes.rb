@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :images
   devise_for :users
+  root to: 'images#index'
   # path: '',
   # path_names: {
   #   sign_in: 'login',
@@ -13,7 +15,7 @@ Rails.application.routes.draw do
   
   # get '/profile', to: 'profile#show'
   # resources :users, only: [:show]
-  root to: 'pages#home'
+
 
   #resources :profile, defaults: {format: :json}
   #get '/profile', to: 'profile#show' 
