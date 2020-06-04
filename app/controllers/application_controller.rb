@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
   include ActionController::MimeResponds
-  respond_to :json
   before_action :configure_devise_parameters, if: :devise_controller?
+  respond_to :json
   # before_action :authenticate_user!, notice: 'Vous devez vous connecter pour accéder à ce contenu'
   def configure_devise_parameters
     devise_parameter_sanitizer.permit(:sign_up) { |u|

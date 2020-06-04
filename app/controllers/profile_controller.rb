@@ -1,6 +1,6 @@
 class ProfileController < ApplicationController
+ # before_action :authenticate_user!
   def show
     render json: current_user
-    #render json: {"first_name": current_user.first_name}
   end
 end
